@@ -2,6 +2,7 @@ package ru.netology.service;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+//import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
 
@@ -20,7 +21,7 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldFall() {
-        assertEquals(cashbackHackService.remain(1000), 0);
+        assertEquals(cashbackHackService.remain(1000), 1000);
     }
 
     @org.junit.jupiter.api.Test
