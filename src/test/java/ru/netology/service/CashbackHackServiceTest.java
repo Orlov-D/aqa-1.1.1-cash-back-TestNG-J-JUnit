@@ -25,7 +25,12 @@ public class CashbackHackServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    public void underThousand2(){
-        Assertions.assertEquals(887,cashbackHackService.remain(113));
+    public void underThousand2() {
+        Assertions.assertEquals(887, cashbackHackService.remain(113));
+    }
+
+    @org.junit.jupiter.api.Test
+    public void aboveThousand2() {
+        Assertions.assertEquals(200, cashbackHackService.remain(5800));
     }
 }
