@@ -20,7 +20,7 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldFall() {
-        assertEquals(cashbackHackService.remain(1000), 1000);
+        assertEquals(cashbackHackService.remain(1000), 0);
     }
 
     @Test
