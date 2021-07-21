@@ -9,16 +9,16 @@ public class CashbackHackServiceTest {
 
     @Test
     public void underThousand() {
-        assertEquals(cashbackHackService.remain(113), 887);
+        assertEquals(887, cashbackHackService.remain(113));
     }
 
     @Test
     public void aboveThousand() {
-        assertEquals(cashbackHackService.remain(5800), 200);
+        assertEquals(200, cashbackHackService.remain(5800));
     }
 
     @Test
     public void shouldFall() {
-        assertEquals(cashbackHackService.remain(1000), 0);
+        assertEquals(0, cashbackHackService.remain(1000));
     }
 }
