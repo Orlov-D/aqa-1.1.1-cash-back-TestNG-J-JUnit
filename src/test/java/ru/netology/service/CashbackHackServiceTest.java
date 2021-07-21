@@ -29,7 +29,6 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-//    @org.junit.jupiter.api.Test
     public void aboveThousand2() {
         assertEquals(200, cashbackHackService.remain(5800));
     }
