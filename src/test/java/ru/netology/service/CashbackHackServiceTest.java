@@ -18,8 +18,8 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void negativeAmount() {
-        assertEquals(cashbackHackService.remain(-100), 1100);
+    public void shouldBeZero() {
+        assertEquals(cashbackHackService.remain(1000), 0);
     }
 
 }
